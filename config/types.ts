@@ -33,3 +33,14 @@ export interface ModuleConfig {
     reminderDays: number[]
   }
 }
+
+export interface CountryConfig {
+    code: string
+    name: string
+    modules: ModuleConfig[]
+    authorities: {
+      immigration: string
+      tax: string
+      socialSecurity: string
+    }
+  }
